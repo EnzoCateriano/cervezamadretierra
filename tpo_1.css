@@ -1,0 +1,152 @@
+/* Archivo CSS perteneciente al TPO 1 */
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white
+}
+body {background-color: rgb(63, 5, 5);
+}
+
+.menubar {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-evenly;
+    list-style: none;
+    margin: 0px;
+    background:linear-gradient(to bottom, rgb(0, 0, 0) 5%, rgb(63, 5, 5)95%);
+}
+
+.menubar a {
+    text-decoration: none;
+    list-style:none;
+    flex-flow: row wrap;
+    display:inline-flex;
+    justify-content:space-around;
+    background-color: rgb(63, 5, 5);
+    border-style:outset;
+    border-color: rgb(255, 255, 255);
+    display: block;
+    padding: 2em;
+    color: white;
+}
+
+.menubar a:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+p {font-weight:lighter}
+
+
+
+
+
+
+#Home {
+    display: block;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration:dashed overline rgba(255, 255, 255,0.3);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+.item-Home {
+    text-align: center;
+    font-size:xx-large;
+    position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   {background-color:rgb(63, 5, 5)}
+    25%  {background-color:darkgoldenrod;}
+    50%  {background-color:black;}
+    75%  {background-color:red;}
+    100% {color:white; background-color:rgb(63, 5, 5)}
+  }
+
+
+
+
+header {position:relative;
+    text-align: center;
+    padding-top: 35px;
+    background-size:contain;}
+
+
+footer {font-size:x-small;
+    margin: 0.25rem;
+    padding: 5%;
+    text-align: center;
+}
+
+#ContacTitulo{
+    text-align: center;
+    text-decoration: solid;
+    font-size: xx-large;
+}
+
+.Contac {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.DivContacto {
+    display:flex;
+    flex-flow:column wrap;
+    margin-left: 15px;
+    font-size: x-large;
+}
+
+#font-nosotros {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+
+.Estilos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+
+
+.Cerv_Estilos{
+    width: 300px;
+    display: inline-grid;
+    flex-flow: column wrap;
+    justify-content:space-evenly;
+    margin: 1px;
+    border-style:double;
+    border-color: rgb(255, 255, 255);
+    padding: 1.5em;
+    text-align: center
+}
+
+.Cerv_Estilos div {
+ text-align:justify;
+}
+
+  
+  @media all and (max-width: 800px) {
+    .menubar {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .menubar {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .menubar a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .menubar li:last-of-type a {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
