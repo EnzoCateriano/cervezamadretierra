@@ -34,53 +34,48 @@ body {background-color: rgb(63, 5, 5);
     background-color: rgb(255, 0, 0);
 }
 
-p {font-weight:lighter}
-
-
-
-
-
-
-#Home {
-    display: block;
-    text-align: center;
-    font-weight: bolder;
-    text-decoration:dashed overline rgba(255, 255, 255,0.3);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
-
 .item-Home {
     text-align: center;
     font-size:xx-large;
     position: relative;
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  background-color: rgb(63,5,5);
+  font-family: sans-serif;
+  border-style: double; border-color: black;
 }
-@keyframes example {
-    0%   {background-color:rgb(63, 5, 5)}
-    25%  {background-color:darkgoldenrod;}
-    50%  {background-color:black;}
-    75%  {background-color:red;}
-    100% {color:white; background-color:rgb(63, 5, 5)}
-  }
 
+#SecNos {
+    position: relative;
+    margin: 0px;
+    padding: 1px;
+    animation: slide 3s infinite linear;
+}
+  
+@keyframes slide {
+    from {
+      transform: translate(0, 0);
+    }
+    to {
+      transform: translate(10%, 0);
+    }
+}
 
-
-
-header {position:relative;
+header {
+    position:relative;
     text-align: center;
     padding-top: 35px;
-    background-size:contain;}
+    background-size:contain;
+}
 
 
-footer {font-size:x-small;
-    margin: 0.25rem;
-    padding: 5%;
+footer {
+  margin-top: black;
+  font-size:small;
+    margin: 1.25rem;
+    padding: 10%;
     text-align: center;
 }
 
-#ContacTitulo{
+#ContacTitulo {
     text-align: center;
     text-decoration: solid;
     font-size: xx-large;
@@ -110,17 +105,15 @@ footer {font-size:x-small;
     justify-content:space-evenly;
 }
 
-
-
-.Cerv_Estilos{
+.Cerv_Estilos {
     width: 300px;
     display: inline-grid;
     flex-flow: column wrap;
     justify-content:space-evenly;
-    margin: 1px;
+    margin: 10px;
     border-style:double;
     border-color: rgb(255, 255, 255);
-    padding: 1.5em;
+    padding: 20px;
     text-align: center
 }
 
@@ -128,14 +121,13 @@ footer {font-size:x-small;
  text-align:justify;
 }
 
-  
-  @media all and (max-width: 800px) {
+@media all and (max-width: 800px) {
     .menubar {
-      justify-content: space-around;
+        justify-content: space-around;
     }
-  }
+}
   
-  @media all and (max-width: 600px) {
+@media all and (max-width: 600px) {
     .menubar {
       flex-flow: column wrap;
       padding: 0;
@@ -149,9 +141,4 @@ footer {font-size:x-small;
     .menubar li:last-of-type a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
-      .Contac {
-    display: block;
-    justify-content: space-around;
-
-}
   }
